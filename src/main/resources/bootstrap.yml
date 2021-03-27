@@ -3,3 +3,8 @@ server:
 spring:
   application:
     name: briana-discovery
+  cloud:
+    config:
+      uri: http://${CONFIG_SERVICE_HOST}:8888
+encrypt:
+  key: ${ENCRYPT_KEY}
